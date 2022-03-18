@@ -1,0 +1,11 @@
+:root {
+    /* global colors */
+    --color1: white;
+    --color2: tomato;
+    --color3: aliceblue;
+    --color4: brown;
+    --color5: red;
+    --color6: #465f43;
+    /* elements settings */
+    --container-width: 75%;
+}

@@ -1,0 +1,115 @@
+@import "global-settings.css" all;
+
+/* Reset, fonts, margins and other shit */
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/DJI_0185.jpg");
+    background-size: 80%;
+}
+
+* {
+    transition: all ease 0.25s;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+/* default elements */
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: var(--container-width);
+    height: fit-content;
+}
+
+.separator {
+    width: 100%;
+    height: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 10px;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding: 10px;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+
+/* materials/effects */
+
+.acryl {
+    backdrop-filter: grayscale(0.75) contrast(0.75) blur(1px)hue-rotate(120deg);
+    z-index: 1;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2), 7px 9px 3px rgba(0, 0, 0, 0.2);
+}
+
+.acryl:before {
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.glass {
+    backdrop-filter: grayscale(0.1) contrast(1.45) hue-rotate(-1deg);
+    z-index: 1;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2), 7px 9px 3px rgba(0, 0, 0, 0.2);
+}
+
+.glass:before {
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.tinted {
+    background-color: rgba(19, 19, 19, 0.171);
+}
+
+
+/* end of materials/effects */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(70, 70, 70);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(128, 219, 225, 100);
+}

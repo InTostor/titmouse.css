@@ -1,0 +1,34 @@
+************************************************************ Materials ************************************************************
+
+name: glass
+description: imitation of glass.
+recomendations: Use it for elements with transparent background or for tiles (with text, for example)
+
+name: acryl
+description: imitation of acryl
+recomendations: Use it for semi-transparent elements, some tiles, maybe as background for text, not loaded images and etc.
+used for tags: any. Literally
+how to use: just apply it to any element. Background of element will be styled with this material
+
+name: tint
+description: tints any material
+used for: tags with any material
+
+
+
+
+********************************************************* layout elements *********************************************************
+name: container
+description: Container, (or wrapper), that made to contain some content </tautology>. It's centered, have auto margin and etc.
+recomendations: Use it for main block (most of elements should be in this)
+used for tags: <div> and other block elements
+how to use: As mentioned in description, this class is used as wrapper for content. 
+    
+
+name: column
+description: simple style for row block. Helps to draw rows of elements
+used for tags: <div> and other block elements
+how to use: use it inside rows ONLY inside rows
+
+
+name: row
