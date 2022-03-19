@@ -32,3 +32,6 @@ how to use: use it inside rows ONLY inside rows
 
 
 name: row
+description: just a row for elements. Elements are placed in line
+used for tags: <div> and other block elements
+how to use: use it anywhere

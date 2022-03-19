@@ -36,7 +36,18 @@ h6 {
 }
 
 
-/* default elements */
+/* default beautify */
+
+a {
+    color: var(--default-link);
+}
+
+a:hover {
+    color: var(--default-link-hover);
+}
+
+
+/* layout elements */
 
 .container {
     position: relative;
@@ -69,6 +80,40 @@ h6 {
     justify-content: space-between;
     height: fit-content;
 }
+
+
+/* Interactive elements */
+
+
+/* Button 1 */
+
+.b1_outer {
+    height: 120px;
+    min-width: 200px;
+    border: var(--color-border) var(--border-thickness) solid;
+    border-radius: var(--border-radius);
+    filter: grayscale(0.45) contrast(0.85) hue-rotate(-20deg);
+    display: flex;
+}
+
+.b1_outer:hover {
+    filter: none;
+    backdrop-filter: none;
+}
+
+.b1_img {
+    height: calc(120px - var(--border-thickness) - var(--border-thickness));
+    width: 120px;
+    border-right: var(--color-border) var(--border-thickness) solid;
+    background-color: var(--color-border);
+}
+
+.b1_p {
+    padding: 10px;
+}
+
+
+/* Button 2 */
 
 
 /* materials/effects */

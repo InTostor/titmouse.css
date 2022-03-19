@@ -6,6 +6,17 @@
     --color4: brown;
     --color5: red;
     --color6: #465f43;
+    --color-def-bg: #012119;
+    --default-link: cornflowerblue;
+    --default-link-hover: aquamarine;
+    /* borders */
+    --color-border: aliceblue;
+    --border-thickness: 7px;
+    --border-radius: 10px;
+    /*  */
+    --color-fail: #d63d3d;
+    --color-warning: #ffff00;
+    --color-success: #00b54b;
     /* elements settings */
     --container-width: 75%;
 }
