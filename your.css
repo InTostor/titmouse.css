@@ -1,0 +1,12 @@
+body {
+    background-image: url("/DJI_0185.jpg");
+    background-size: 2048px;
+}
+
+.img1_img {
+    background-image: url("/2d-map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 250px;
+}
