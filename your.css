@@ -10,3 +10,19 @@ body {
     height: 240px;
     width: 250px;
 }
+
+.third {
+    height: 50vh;
+    justify-content: space-around;
+}
+
+.separator {
+    background-color: azure;
+}
+
+.dark_block {
+    background-color: #333333;
+    height: fit-content;
+    padding: 50px 0px;
+    color: white;
+}

@@ -15,7 +15,7 @@ body {
 }
 
 * {
-    transition: all ease 0.25s;
+    transition: all ease 0.15s;
 }
 
 *,
@@ -47,6 +47,21 @@ a:hover {
     color: var(--default-link-hover);
 }
 
+input {
+    border: var(--color-border) calc(var(--border-thickness) / 2) solid;
+    border-radius: calc(var(--border-radius) / 2);
+    background-color: lightgray;
+    padding: 2px;
+}
+
+input:hover {
+    filter: brightness(0.9);
+}
+
+input:active {
+    filter: brightness(1.1);
+}
+
 
 /* layout elements */
 
@@ -61,7 +76,8 @@ a:hover {
 
 .separator {
     width: 100%;
-    height: 10px;
+    height: var(--separator-height);
+    margin: 10px 0;
 }
 
 .column {
@@ -95,6 +111,7 @@ a:hover {
     border-radius: var(--border-radius);
     filter: grayscale(0.45) contrast(0.85) hue-rotate(-20deg);
     display: flex;
+    text-decoration: none;
 }
 
 .button1:hover {
@@ -152,7 +169,7 @@ a:hover {
 /* materials/effects */
 
 .acryl {
-    backdrop-filter: grayscale(0.75) contrast(0.75) blur(1px)hue-rotate(120deg);
+    backdrop-filter: grayscale(0.75) contrast(0.75) blur(1px)hue-rotate(10deg);
     z-index: 1;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2), 7px 9px 3px rgba(0, 0, 0, 0.2);
 }
@@ -174,7 +191,21 @@ a:hover {
 }
 
 .tinted {
-    background-color: rgba(19, 19, 19, 0.171);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.matte {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2), 7px 9px 3px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px) brightness(1.2) contrast(0.8);
+}
+
+.matte:before {
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.invert {
+    filter: invert();
 }
 
 
